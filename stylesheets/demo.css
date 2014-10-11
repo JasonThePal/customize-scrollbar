@@ -1,0 +1,44 @@
+/**
+ * @author pei-qiao.peng 
+ * @date   2014/10/11.
+ * @email  ppq1991@gmail.com
+ * @github https://github.com/ppq1991/
+ * @blog   http://pengpeiqiao.tk/
+ */
+.demo-container {
+  position: relative;
+  height: 500px;
+  background-color: #eee;
+}
+.demo-container p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.demo-container .demo {
+  height: 500px;
+  overflow: hidden;
+}
+.demo-container .scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 500px;
+  background-color: #ddd;
+}
+.demo-container .scrollbar div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+}
+.demo-container .scrollbar .thumb {
+  background-color: #aaa;
+}
+.demo-container .scrollbar .up {
+  top: 0;
+}
+.demo-container .scrollbar .down {
+  bottom: 0;
+}

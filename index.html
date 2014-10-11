@@ -1,82 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <link rel="stylesheet" href="stylesheets/demo.css"/>
     <!--[if lt IE 9]>
     <script src="javascripts/html5.js"></script>
     <![endif]-->
 
     <title>Customize-scrollbar</title>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div class="inner">
+<body>
+<header>
+    <div class="inner">
         <h1>Customize-scrollbar</h1>
+
         <h2>a customize-scrollbar, support for ie6+</h2>
-        <a href="https://github.com/ppq1991/customize-scrollbar" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+        <a href="https://github.com/ppq1991/customize-scrollbar" class="button">
+            <small>View project on</small>
+            GitHub</a>
+    </div>
+</header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
+<div id="content-wrapper">
+    <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Install</h3>
+            <h1>
+                <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>DEMO
+            </h1>
+            <p>all you see can be customized !</p>
+            <div class="demo-container">
+                <div class="scrollbar">
+                    <div class="up"></div>
+                    <div class="thumb"></div>
+                    <div class="down"></div>
+                </div>
+                <div class="demo">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                    <p>11</p>
+                    <p>12</p>
+                    <p>13</p>
+                    <p>14</p>
+                    <p>15</p>
+                    <p>16</p>
+                    <p>17</p>
+                    <p>18</p>
+                    <p>19</p>
+                    <p>20</p>
+                </div>
+            </div>
+            <h3>Webkit</h3>
+            <p>the scrollbar can <strong>auto adjust</strong> when the content been <strong>dynamic changed</strong>.(e.g. nodes inside been removed or inserted)</p>
+            <h3>IE</h3>
+            <p>you need to call <code>refresh()</code> , when the content been dynamic changed.</p>
+            <h1>
+                <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Install
+            </h1>
 
-<p></p>
+            <p></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+            <pre><code>$ bower install customize-scrollbar</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+            <p>If you need help about bower, see <a href="http://bower.io/">Bower's HomePage</a>.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+            <h1>
+                <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Dependency
+            </h1>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+            <ul>
+                <li>jquery #1.x</li>
+                <li>jquery-mousewheel #3.x</li>
+            </ul>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+            <h1>
+                <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Get Started
+            </h1>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+            <h2>HTML</h2>
+<pre><code>&lt;div class="scrollbar"&gt;
+    &lt;div class="up"&gt;&lt;/div&gt;
+    &lt;div class="thumb"&gt;&lt;/div&gt;
+    &lt;div class="down"&gt;&lt;/div&gt;
+    &lt;div class="demo"&gt;......&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h2>CSS</h2>
+            <p>all css can be customize</p>
+            <h2>JS</h2>
+<pre><code>$(function(){
+    $('.demo').scrollbar({
+        scrollbar : '.scrollbar',
+        up        : '.up',
+        thumb     : '.thumb',
+        down      : '.down'
+    });
+});</code></pre>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+            <h1>
+                <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact
+            </h1>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+            <p>Contact me at
+                <a href="http://help.github.com/pages">http://pengpeiqiao.tk</a> or contact
+                <a href="mailto:ppq1991@gmail.com">ppq1991@gmail.com</a>.
+            </p>
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/ppq1991/customize-scrollbar/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/ppq1991/customize-scrollbar/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+            <a href="https://github.com/ppq1991/customize-scrollbar/zipball/master" class="button">
+                <small>Download</small>
+                .zip file
+            </a>
+            <a href="https://github.com/ppq1991/customize-scrollbar/tarball/master" class="button">
+                <small>Download</small>
+                .tar.gz file
+            </a>
 
-          <p class="repo-owner"><a href="https://github.com/ppq1991/customize-scrollbar"></a> is maintained by <a href="https://github.com/ppq1991">ppq1991</a>.</p>
+            <p class="repo-owner"><a href="https://github.com/ppq1991/customize-scrollbar"></a> is maintained by
+                <a href="https://github.com/ppq1991">ppq1991</a>.
+            </p>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+            <p>This page was generated by
+                <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by
+                <a href="https://twitter.com/jasonlong">Jason Long</a>.
+            </p>
         </aside>
-      </div>
     </div>
+</div>
 
-  
-  </body>
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/jquery.mousewheel.min.js"></script>
+<script src="javascripts/customize-scrollbar.js"></script>
+<script>
+    $(function(){
+        $('.demo').scrollbar({
+            scrollbar : '.scrollbar',
+            up        : '.up',
+            thumb     : '.thumb',
+            down      : '.down'
+        });
+    });
+</script>
+</body>
 </html>
