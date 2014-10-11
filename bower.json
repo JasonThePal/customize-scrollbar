@@ -1,0 +1,29 @@
+{
+  "name": "customize-scrollbar",
+  "version": "1.0.0",
+  "description": "a customize scrollbar, support for ie6+",
+  "main": "lib/customize-scrollbar.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "scrollbar"
+  ],
+  "authors": [
+    "pei-qiao.peng"
+  ],
+  "license": "MIT",
+  "homepage": "http://pengpeiqiao.tk/customize-scrollbar/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".gitignore"
+  ],
+   "dependencies": {
+    "jquery": "1.11.1",
+    "jquery-mousewheel": "3.1.12"
+  }
+}
